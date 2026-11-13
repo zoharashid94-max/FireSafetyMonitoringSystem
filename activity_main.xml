@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080D1B"
+    android:fillViewport="true"
+    android:clipToPadding="false"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="30dp">
+
+        <!-- Brand Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="#292039"
+                android:gravity="center"
+                android:text="🔥"
+                android:textSize="29sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIREGUARD"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Smart Fire Safety System"
+                    android:textColor="#B0BDD4"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Page Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Monitoring Dashboard"
+            android:textColor="#FFFFFF"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Monitor room conditions and safety alerts."
+            android:textColor="#B0BDD4"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp" />
+
+        <!-- System Status -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="SYSTEM STATUS"
+            android:textColor="#B0BDD4"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/tvSystemStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="#202B43"
+            android:lineSpacingExtra="3dp"
+            android:minHeight="64dp"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="●  READY TO CHECK"
+            android:textColor="#DCE2F0"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Safety Overview -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Safety Overview"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 ROOMS"
+                android:textColor="#B0BDD4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Statistics -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#1B2740"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TOTAL"
+                    android:textColor="#B0BDD4"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotalRoomsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rooms"
+                    android:textColor="#B0BDD4"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="#15372F"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SAFE"
+                    android:textColor="#65E6A5"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvSafeRoomsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="—"
+                    android:textColor="#65E6A5"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rooms"
+                    android:textColor="#A8DEC3"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="#431C2A"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="DANGER"
+                    android:textColor="#FF929A"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDangerRoomsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="—"
+                    android:textColor="#FF929A"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rooms"
+                    android:textColor="#E6AAB1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Room Monitoring -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Room Monitoring"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Temperature and smoke detection"
+            android:textColor="#B0BDD4"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvKitchen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="#171D30"
+            android:lineSpacingExtra="6dp"
+            android:padding="20dp"
+            android:text="KITCHEN&#10;Press Run Safety Check to inspect"
+            android:textColor="#DCE2F0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvStoreRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#171D30"
+            android:lineSpacingExtra="6dp"
+            android:padding="20dp"
+            android:text="STORE ROOM&#10;Press Run Safety Check to inspect"
+            android:textColor="#DCE2F0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvOffice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#171D30"
+            android:lineSpacingExtra="6dp"
+            android:padding="20dp"
+            android:text="OFFICE&#10;Press Run Safety Check to inspect"
+            android:textColor="#DCE2F0"
+            android:textSize="16sp" />
+
+        <!-- Alert Panel -->
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#171D30"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="5dp"
+            android:padding="20dp"
+            android:text="Safety check has not been run yet."
+            android:textColor="#DCE2F0"
+            android:textSize="16sp" />
+
+        <!-- Main Action -->
+        <Button
+            android:id="@+id/btnCheckSafety"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F97316"
+            android:elevation="3dp"
+            android:minHeight="62dp"
+            android:text="▶  Run Safety Check"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="12dp"
+            android:text="SYSTEM INFORMATION&#10;Simulated readings • No physical sensors connected"
+            android:textColor="#A0ADC5"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>
