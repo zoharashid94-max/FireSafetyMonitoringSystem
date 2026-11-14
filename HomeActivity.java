@@ -1,4 +1,3 @@
-
 package com.example.firesafetymonitoringsystem;
 
 import android.content.Intent;
