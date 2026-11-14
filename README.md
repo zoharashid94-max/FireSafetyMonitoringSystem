@@ -1,4 +1,4 @@
-# FIREGUARD Fire Safety Monitoring System
+# FIREGUARD: Fire Safety Monitoring System
 
 FIREGUARD is a fire safety monitoring project I developed to make it easier to view room safety conditions and identify potential fire risks through a simple, easy-to-understand interface.
 
